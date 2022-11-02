@@ -8,7 +8,7 @@ export CGO_ENABLED=0
 export ARTIFACT_DIR=built_artifacts/
 mkdir -p $ARTIFACT_DIR
 
-linuxArchs=("386" "amd64" "arm" "armhf" "arm64")
+linuxArchs=("386" "amd64" "arm" "armhf" "arm64" "mips" "mipsle")
 export TARGET_OS=linux
 for arch in ${linuxArchs[@]}; do
     unset TARGET_ARM
