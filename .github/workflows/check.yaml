@@ -17,4 +17,4 @@ jobs:
     - name: Test
       run: make test
     - name: release
-      run : make release
+      run : make github-release
